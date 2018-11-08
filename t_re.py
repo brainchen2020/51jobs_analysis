@@ -47,14 +47,14 @@ for item in range(sheet.max_row):
 # print(list(zip(Counter(str_arr).keys())))
 
 ##画图
-# max_value = max(list(Counter(str_arr).values()))
-# min_value = min(list(Counter(str_arr).values()))
-# plt.hist(Counter(str_arr).keys(),
-#          bins=np.arange(min_value,max_value))
-# plt.title("最大值")
-# plt.xlabel("单字")
-# plt.ylabel("出现次数")
-# plt.show()
+max_value = max(list(Counter(str_arr).values()))
+min_value = min(list(Counter(str_arr).values()))
+plt.hist(Counter(str_arr).keys(),
+         bins=np.arange(min_value,max_value))
+plt.title("最大值")
+plt.xlabel("单字")
+plt.ylabel("出现次数")
+plt.show()
 
 
 
